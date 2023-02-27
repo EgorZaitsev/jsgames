@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat';
+}
+
+.header {
+  height: 1024px;
+  background-image: url(images/background.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.title {
+  position: absolute;
+  color:white;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+}
+
+.title_place_header {
+  top: 217px;
+  left: 120px;
+}
+
+.subtitle {
+  position:absolute;
+  color: white;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  margin-top: 32px;
+}
+
+.subtitle_place_header {
+  max-width: 481px;
+  top:372px;
+  left:120px;
+}
+
+.header__span { 
+  font-weight: 700;
+}
+
+.button { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0b2244;
+  position: absolute;
+  width: 234px;
+  height: 48px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: box-shadow .5s ease;
+}
+
+.button_place_header {
+  top: 482px;
+  left: 120px;
+}
+
+.button:hover {
+  box-shadow: 0 0 7px white;
+  cursor: pointer;
+}
+
+.button__text {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  
+}
+
+
+.main {
+  background-color: #000915;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.card {
+  position: relative;
+  width: 379px;
+  height: 300px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  margin-right:30px;
+  transition: box-shadow .4s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px #0b2244;
+}
+
+
+
+.card__image {
+  position: relative;
+}
+
+.card__text {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.game-section {
+  height: 800px;
+  background-color: #000915;
+  position: relative;
+}
+
+.title_place_game-one {
+  top: 282px;
+  left: 120px;
+  margin-bottom: 32px;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.subtitle_place_game-one {
+  top:372px;
+  left:120px;
+  max-width: 584px;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+}
+
+.button_place_game-one {
+  top: 482px;
+  left: 120px;
+}
+
+.game-section__image_place_one {
+
+  right: 116px;
+  bottom: 233px;
+}
+
+
+.title_place_game-two {
+  width: 396px;
+  top: 282px;
+  right: 308px;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.subtitle_place_game-two {
+  top: 372px;
+  right: 116px;
+  max-width: 588px;
+  margin: 0;
+}
+
+.button_place_game-two {
+  right: 463px;
+  top: 469px;
+}
+
+.game-section__image_place_two {
+  position: absolute;
+  left: 120px;
+  top: 239px;
+}
+
+.game-section_number_third {
+  overflow:hidden;
+}
+
+
+@media (width: 1024px) {
+  
+  
+}
+
+
+
+
+@media (max-width:768px){
+  .header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 735px;
+    background-image: url(images/backgroundiphone.png);
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .title {
+    position: static;
+    margin-bottom: 20px;
+    color:white;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+
+  .subtitle {
+    position: static;
+    max-width: 343px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    top: 349px;
+    left:16px;
+    margin-bottom: 32px;
+  }
+  .button {
+    position:static;
+    margin: 0% auto 64px;
+  }
+
+  
+  .main {
+    height: 1221px;
+  }
+
+  .card {
+    width: 343px;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .game-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .game-section__image { 
+    position: static;
+    max-width: 344px;
+  }
+
+}

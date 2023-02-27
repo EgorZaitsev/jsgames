@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="title title_place_header">Добро пожаловать<br>на мой сайт!</h1>
+    <h4 class="subtitle subtitle_place_header">
+      Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="header__span">поехали</span> и <span class="header__span">приступай</span>
+    </h4>
+    <a href="#" class="button button_place_header">
+      <p class="button__text">Поехали</p>
+    </a>
+  </header>
+  <main class="main">
+    <a href="#game1" class="card">
+      <img src="images/game1.png" alt="game1" class="card__image">
+      <p class="card__text">Игра 1</p>
+    </a>
+    <a href="#game2" class="card">
+      <img src="images/game2.png" alt="game1" class="card__image">
+      <p class="card__text">Игра 2</p>
+    </a>
+    <a href="#game3" class="card">
+      <img src="images/game3.png" alt="game1" class="card__image">
+      <p class="card__text">Игра 3</p>
+    </a>
+  </main>
+  <section id="game1" class="game-section game-section_number_first">
+    <h1 class="title title_place_game-one">Времена года!</h1>
+    <p class="subtitle subtitle_place_game-one">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p> 
+    <a  class="button button_place_game-one">
+      <p class="button__text">Играть</p>
+    </a>
+    <img src="images/videogame1.svg" alt="videogame1" class="game-section__image game-section__image_place_one">
+  </section>
+  <section id="game2" class="game-section game-section_number_second">
+    <h1 class="title title_place_game-two">Запомни слова</h1>
+    <p class="subtitle subtitle_place_game-two">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p> 
+    <a  onclick="gameTwo(wordArr);" class="button button_place_game-two">
+      <p class="button__text">Играть</p>
+    </a>
+    <img src="images/videogame2.svg" alt="videogame2" class="game-section__image game-section__image_place_two">
+  </section>
+  <section id="game3" class="game-section game-section_number_third">
+    <!--<h1 class="title title_place_game-three">Игра в загадки</h1>
+    <p class="subtitle subtitle_place_game-three">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p> 
+    <a  onclick="gameTwo(wordArr);" class="button button_place_game-three">
+      <p class="button__text">Играть</p>
+    </a>
+    -->
+    <img src="images/background2.png" alt="videogame3" class="game-section__image game-section__image_place_three">
+  </section>
+  
+</body>
+</html>
