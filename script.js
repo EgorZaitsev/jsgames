@@ -5,6 +5,9 @@ let wordArr = ['яблоко', 'груша', 'дыня', 'виноград', 'п
 let months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
 let yearTimes = ['зима', 'весна', 'лето', 'осень'];
 
+
+let helper = ['Имеет иголки','Находится в лесу'];
+
 let gameOne = (arr, array) => {
     let index = 0; 
     index = Number(prompt('Введите номер месяца'))-1;
@@ -65,6 +68,36 @@ let gameTwo = (arr) => {
             break;
     }
 
+}
+
+
+
+let gameThree = (helper) => {
+    let needhelp = false;
+    let helps = 2;
+    let trys = 3;
+    let answer = '';
+    alert("Загадка: Зимой и летом - одним цветом");
+    while(trys > 0) {
+        answer = prompt("Ваш ответ");
+        answer = answer.toLowerCase();
+        if (answer === 'ель' || answer === 'елка' || answer === 'ёлка') {
+            alert("Верно")
+            break;
+        }
+        else {
+            trys -= 1;
+            alert(`Неверно. Осталось попыток: ${trys}.`);
+        }
+        if(trys === 0) break;
+        needhelp = confirm(`Хотите получить подсказку? Осталось подсказок: ${helps}`)
+        if(needhelp) {
+            alert(helper[helps-1]);
+            helps -= 1;
+        }
+
+        
+    }
 }
 
 
