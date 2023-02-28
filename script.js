@@ -2,6 +2,39 @@
 let wordArr = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
 
 
+let months = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+let yearTimes = ['зима', 'весна', 'лето', 'осень'];
+
+let gameOne = (arr, array) => {
+    let index = 0; 
+    index = Number(prompt('Введите номер месяца'))-1;
+    for(let i = 0; i<=11; i++) {
+        if(i === index) {  
+            alert(arr[i]);
+            break;
+        }
+    }
+    switch(index){
+        case 2: case 3: case 4:
+            alert(array[1]);
+            break;
+        case 5: case 6: case 7:
+            alert(array[2]);
+            break;
+        case 8: case 9: case 10:
+            alert(array[3]);
+            break;
+        case 0: case 1: case 11:
+            alert(array[0]);
+            break;
+        default:
+            break;
+    }
+     
+}
+
+
+
 let gameTwo = (arr) => {
     let question1 = '';
     let question2 = '';
@@ -33,3 +66,6 @@ let gameTwo = (arr) => {
     }
 
 }
+
+
+
