@@ -1,11 +1,12 @@
 
 let wordArr = ['яблоко', 'груша', 'дыня', 'виноград', 'персик', 'апельсин', 'мандарин'];
 
+
 let gameTwo = (arr) => {
     let question1 = '';
     let question2 = '';
     let answers = 0;
-    arr =arr.sort(()=>Math.random()-0.5)
+    arr = arr.sort(()=>Math.random()-0.5)
     arr.forEach(item => {
         alert(item);
     });

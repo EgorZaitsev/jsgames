@@ -82,8 +82,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px ;
+  padding-top: 128px;
+  padding-bottom: 128px ;
 }
 
 .card {
@@ -176,16 +176,36 @@ body {
   top: 469px;
 }
 
-.game-section__image_place_two {
-
-}
 
 .game-section_number_second {
   flex-direction: row-reverse;
 }
 
+.title_place_game-three {
+  text-align: center;
+  
+}
+
+.subtitle_place_game-three {
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.button_place_game-three {
+  align-self: center;
+}
+
 .game-section_number_third {
+  background-image: url(images/background2.png);
+  background-position: center;
   overflow:hidden;
+
+}
+
+.game-section__image_place_three {
+  position: absolute;
+  z-index: 0;
 }
 
 
@@ -201,35 +221,33 @@ body {
   .header { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 735px;
     background-image: url(images/backgroundiphone.png);
     background-repeat: no-repeat;
-    width: 100%;
+    
   }
   .title {
-    position: static;
     margin-bottom: 20px;
     color:white;
     font-size: 32px;
     line-height: 39px;
     text-align: center;
+    margin: 238px auto 0;
   }
 
+  
+  
+
   .subtitle {
-    position: static;
     max-width: 343px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
-    top: 349px;
-    left:16px;
-    margin-bottom: 32px;
+    margin: 32px auto 0;
   }
   .button {
-    position:static;
-    margin: 0% auto 64px;
+
+    margin: 32px auto 64px;
   }
 
   
